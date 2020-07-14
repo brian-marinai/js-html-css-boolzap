@@ -55,7 +55,7 @@
               <p>17.00</p>
             </div>
             <div class="contatto">
-              <img src="img/avatar4.png" alt="">
+              <img src="img/avatar3.png" alt="">
               <div class="contenuto">
                 <h2>Samuele</h2>
                 <p>Non poteva essere altrimenti</p>
@@ -70,26 +70,10 @@
               </div>
               <p>17.00</p>
             </div>
-            <div class="contatto">
-              <img src="img/profilo.jpg" alt="">
-              <div class="contenuto">
-                <h2>Claudia</h2>
-                <p>Non poteva essere altrimenti</p>
-              </div>
-              <p>17.00</p>
-            </div>
-            <div class="contatto">
-              <img src="img/profilo.jpg" alt="">
-              <div class="contenuto">
-                <h2>Davide</h2>
-                <p>Non poteva essere altrimenti</p>
-              </div>
-              <p>17.00</p>
-            </div>
           </div>
         </nav>
         <div class="home">
-          <div class="chat-contatto">
+          <div class="home-contatto">
             <img src="img/avatar3.png" alt="">
             <h3>
               <span>Michele</span>
@@ -103,18 +87,52 @@
             </div>
           </div>
           <div class="chat">
+            <div class="messaggio-container">
+              <div id="messaggio-destra" class="messaggi-destra">
+                <div class="messaggio ricevuto">
+                  <span class="testo-messaggio">Ciao come stai?</span>
+                  <span class="ora-messaggio">15.00</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
+                </div>
+                <div class="messaggio spedito">
+                  <span class="testo-messaggio">bene grazie te?</span>
+                  <span class="ora-messaggio">15.10</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
 
+                </div>
+              </div>
+            </div>
           </div>
           <div class="scrivi-messaggio">
             <i class="far fa-smile"></i>
             <div class="scrivi">
-              <input class="input2" type="text" name="" value="" placeholder="Scrivi un messaggio">
+              <input id="new-message" class="input2" type="text" name="" value="" placeholder="Scrivi un messaggio">
             </div>
             <i class="fas fa-microphone"></i>
           </div>
 
         </div>
       </main>
+    </div>
+
+    <div id="template-message-send" style="display:none">
+      <div class="messaggio spedito">
+        <span id="message-text" class="testo-messaggio"></span>
+        <span id="message-time" class="ora-messaggio"></span>
+        <i class="fa fa-chevron-down f-right messagge-option"></i>
+        <div class="messaggio-opzioni-pannello">
+          <div class="messaggio-info">Info messaggio</div>
+          <div class="messaggio-destroy">cancella messaggio</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,3 +1,4 @@
+/* regole generali */
 *{
   margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@ header{
   left: 0;
   width: 100vw;
   height: 15vh;
-  background: #387;
+  background: #66CDAA;
   z-index: -1;
 }
 #contenitore{
@@ -30,6 +31,14 @@ header{
   height: 95%;
   z-index: 1;
 }
+.f-right{
+  float: right;
+}
+.f-left{
+  float: left;
+}
+
+/* parte del main */
 .main-nav{
   float: left;
   width: 500px;
@@ -95,6 +104,11 @@ header{
   justify-content: center;
   width: 10%;
 }
+
+.contatti{
+  height: 510px;
+  background-color: lightgray;
+}
 .contatto{
   height: 70px;
   background-color: whitesmoke;
@@ -137,7 +151,7 @@ header{
   float: left;
   width: calc(100% - 500px);
 }
-.chat-contatto{
+.home-contatto{
   width: 100%;
   background-color: whitesmoke;
   height: 50px;
@@ -145,7 +159,7 @@ header{
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
 }
-.chat-contatto img{
+.home-contatto img{
   height: 40px;
   width: 40px;
   display: flex;
@@ -154,19 +168,80 @@ header{
   border-radius: 100%;
   margin-right: 20px;
 }
-.chat-contatto h3{
+.home-contatto h3{
   font-size: 16px;
   font-weight: normal;
   margin-right: auto;
   align-self: center;
 }
 .chat{
-  background-color: grey;
+  background-color: #B0C4DE;
   height: 500px;
 }
+
+.messaggio-container{
+  width: 100%;
+  height: calc(100% - 50px - 50px)
+}
+
+.messaggio{
+  position: relative;
+  float: left;
+  clear: both;
+
+  min-width: 13%;
+  max-width: 60%;
+  margin: 10px;
+  padding: 15px;
+  background: grey;
+  border-radius: 10px;
+  z-index: 100;
+  font-size: 15px;
+}
+
+.messaggio.spedito{
+  float: right;
+}
+
+.messaggio .ora-messaggio{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+
+.messaggio .messagge-option, .messaggio-opzioni-pannello{
+
+display: none;
+
+}
+
+.messaggio:hover .messagge-option{
+  display: block;
+}
+
+.messaggio-opzioni-pannello{
+  position: absolute;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  left: 0;
+  height: 50px;
+  width: 150px;
+  bottom: -50px;
+}
+
+.messaggio-opzioni-pannello > div{
+  font-size: 15px;
+  text-align: center;
+  line-height: 23px;
+
+}
+
+
 .scrivi-messaggio{
   height: 50px;
-  background-color: whitesmoke;
+  background-color: #ccc;
   display: flex;
   justify-content: space-around;
 }
@@ -182,6 +257,7 @@ header{
   height: 70%;
 }
 .scrivi input{
+  padding: 15px;
   width: 100%;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
