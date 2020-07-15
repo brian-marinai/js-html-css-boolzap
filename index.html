@@ -34,14 +34,14 @@
               <div class="srcbtn">
                 <i class="fas fa-search"></i>
               </div>
-              <input class="input" type="text" placeholder="Cerca o inizia una nuova chat">
+              <input id="contact-filter" class="input" type="text" placeholder="Cerca o inizia una nuova chat">
             </div>
           </div>
           <div class="contatti">
             <div class="contatto">
               <img src="img/avatar3.png" alt="">
               <div class="contenuto">
-                <h2>Michele</h2>
+                <h2 class="contact-name">Michele</h2>
                 <p>Non poteva essere altrimenti</p>
               </div>
               <p>17.00</p>
@@ -49,7 +49,7 @@
             <div class="contatto">
               <img src="img/avatar3.png" alt="">
               <div class="contenuto">
-                <h2>Fabio</h2>
+                <h2 class="contact-name">Fabio</h2>
                 <p>Non poteva essere altrimenti</p>
               </div>
               <p>17.00</p>
@@ -57,7 +57,7 @@
             <div class="contatto">
               <img src="img/avatar3.png" alt="">
               <div class="contenuto">
-                <h2>Samuele</h2>
+                <h2 class="contact-name">Samuele</h2>
                 <p>Non poteva essere altrimenti</p>
               </div>
               <p>17.00</p>
@@ -65,7 +65,7 @@
             <div class="contatto">
               <img src="img/avatar3.png" alt="">
               <div class="contenuto">
-                <h2>Alessandro</h2>
+                <h2 class="contact-name">Alessandro</h2>
                 <p>Non poteva essere altrimenti</p>
               </div>
               <p>17.00</p>
@@ -123,8 +123,8 @@
       </main>
     </div>
 
-    <div id="template-message-send" style="display:none">
-      <div class="messaggio spedito">
+    <div id="template-message" style="display:none">
+      <div class="messaggio">
         <span id="message-text" class="testo-messaggio"></span>
         <span id="message-time" class="ora-messaggio"></span>
         <i class="fa fa-chevron-down f-right messagge-option"></i>

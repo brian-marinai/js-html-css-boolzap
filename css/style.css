@@ -193,7 +193,7 @@ header{
   max-width: 60%;
   margin: 10px;
   padding: 15px;
-  background: grey;
+  background: white;
   border-radius: 10px;
   z-index: 100;
   font-size: 15px;
@@ -201,8 +201,12 @@ header{
 
 .messaggio.spedito{
   float: right;
+  background-color: #90EE90;
 }
-
+.messaggio .ricevuto{
+  float: left;
+  background-color: white;
+}
 .messaggio .ora-messaggio{
   position: absolute;
   bottom: 5px;
