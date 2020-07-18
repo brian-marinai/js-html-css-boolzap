@@ -62,7 +62,7 @@ header{
   border-radius: 100%;
   display: flex;
   align-self: center;
-  margin-left: 5px;
+  margin-left: 10px;
   border-radius: 50%;
 }
 .icone{
@@ -114,9 +114,12 @@ header{
   background-color: whitesmoke;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   padding: 1%;
   border-top: 1px solid lightgrey;
+}
+
+.contatti .contatto.active{
+  background-color: #bfbfbf;
 }
 .contatto img{
   height: 50px;
@@ -128,7 +131,7 @@ header{
 }
 .contenuto{
   align-self: center;
-  margin-right: 150px;
+  margin-left: 25px;
 }
 .contenuto h2{
   font-size: 18px;
@@ -140,6 +143,7 @@ header{
 }
 .contatto > p{
   margin-right: 10px;
+  margin-left: auto;
   align-self: center;
 }
 .contatto:hover{
@@ -175,8 +179,9 @@ header{
   align-self: center;
 }
 .chat{
-  background-color: #B0C4DE;
+  background-image: url(../img/sfondo.jpg);
   height: 500px;
+  background-size: contain;
 }
 
 .messaggio-container{
@@ -215,9 +220,9 @@ header{
 }
 
 .messaggio .messagge-option, .messaggio-opzioni-pannello{
-
-display: none;
-
+  margin-left: 5px;
+  display: none;
+  cursor: pointer;
 }
 
 .messaggio:hover .messagge-option{
@@ -235,6 +240,10 @@ display: none;
   bottom: -50px;
 }
 
+.show{
+  display: block;
+}
+
 .messaggio-opzioni-pannello > div{
   font-size: 15px;
   text-align: center;
@@ -242,6 +251,14 @@ display: none;
 
 }
 
+
+.messaggio-container .messaggi-destra{
+  display: none;
+}
+
+.messaggio-container .messaggi-destra.active{
+  display: block;
+}
 
 .scrivi-messaggio{
   height: 50px;

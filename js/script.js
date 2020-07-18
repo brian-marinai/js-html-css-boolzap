@@ -13,7 +13,7 @@ function sendKey(event) {
     input.val("");
     sendMessage(testo, "spedito");
 
-    setTimeout(function() { sendMessage("ok", "ricevuto"); }, 2000 );
+    setTimeout(function() { sendMessage("ok", "ricevuto"); }, 1000 );
   }
 }
 
@@ -43,10 +43,39 @@ function searchKeyup() {
 }
 
 
+function addContactListener() {
+
+  var contact = $(".contatti .contatto");
+  contact.click(contactClick);
+}
+
+function contactClick() {
+
+  var clickedcontact = $(this);
+  var id = clickedcontact.data("id");
+  var contact = $(".contatti .contatto");
+
+  var conversazioni = $(".messaggi-destra");
+  var selectedconv = $(".messaggi-destra[data-id=" + id + "]");
+
+  var contattohome = $(".home-contatto");
+  var contattohomeselected = $(".home-contatto[data-id=" + id + "]");
+
+  contact.removeClass("active");
+  clickedcontact.addClass("active");
+
+  conversazioni.removeClass("active");
+  selectedconv.addClass("active");
+
+  contattohome.removeClass("active");
+  contattohomeselected.addClass("active");
+
+}
+
 function sendMessage (testo, type) {
 
   var template = $("#template-message > div").clone();
-  var target = $("#messaggio-destra");
+  var target = $(".messaggi-destra.active");
 
   template.addClass(type);
 
@@ -55,6 +84,40 @@ function sendMessage (testo, type) {
 
   target.append(template);
 }
+
+
+function addMessagelistener() {
+
+  $(document).on("click", ".messagge-option", messageoptionclick);
+}
+
+function messageoptionclick() {
+  var messageButton = $(this);
+  var messageoption = messageButton.siblings(".messaggio-opzioni-pannello");
+  messageoption.toggle();
+}
+
+function addMessageDestrotListener() {
+
+  $(document).on("click", ".messaggio-destroy", messageDestroy);
+}
+function messageDestroy() {
+  var destroy = $(this);
+
+  var message = destroy.closest(".messaggio");
+
+  message.remove()
+}
+
+
+
+function openFolder() {
+
+  var input = $(this);
+  input.addClass("show");
+}
+
+
 
 function getHour() {
 
@@ -65,7 +128,9 @@ function getHour() {
 function init() {
   addListener();
   addsearchListener();
-
+  addContactListener();
+  addMessagelistener();
+  addMessageDestrotListener();
 }
 
 $(document).ready(init);

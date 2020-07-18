@@ -22,7 +22,7 @@
         <!-- parte nav -->
         <nav class="main-nav">
           <div class="profilo">
-            <img src="img/avatar1.png" alt="">
+            <img src="img/jojo.jpg" alt="">
             <div class="icone">
               <i class="fas fa-circle-notch"></i>
               <i class="fas fa-comment-alt"></i>
@@ -38,35 +38,67 @@
             </div>
           </div>
           <div class="contatti">
-            <div class="contatto">
-              <img src="img/avatar3.png" alt="">
+            <div class="contatto" data-id="0">
+              <img src="img/beatles.jpg" alt="">
               <div class="contenuto">
-                <h2 class="contact-name">Michele</h2>
-                <p>Non poteva essere altrimenti</p>
+                <h2 class="contact-name">The Beatles</h2>
+                <p>Here, There And Everywhere</p>
               </div>
               <p>17.00</p>
             </div>
-            <div class="contatto">
-              <img src="img/avatar3.png" alt="">
+            <div class="contatto active" data-id="1">
+              <img src="img/oasis.jpg" alt="">
               <div class="contenuto">
-                <h2 class="contact-name">Fabio</h2>
-                <p>Non poteva essere altrimenti</p>
+                <h2 class="contact-name">Oasis</h2>
+                <p>Champane Supernova</p>
               </div>
               <p>17.00</p>
             </div>
-            <div class="contatto">
-              <img src="img/avatar3.png" alt="">
+            <div class="contatto" data-id="2">
+              <img src="img/zeppelin.jpg" alt="">
               <div class="contenuto">
-                <h2 class="contact-name">Samuele</h2>
-                <p>Non poteva essere altrimenti</p>
+                <h2 class="contact-name">Led Zeppelin</h2>
+                <p>Whole Lotta Love</p>
               </div>
               <p>17.00</p>
             </div>
-            <div class="contatto">
-              <img src="img/avatar3.png" alt="">
+            <div class="contatto" data-id="3">
+              <img src="img/bowie.jpg" alt="">
               <div class="contenuto">
-                <h2 class="contact-name">Alessandro</h2>
-                <p>Non poteva essere altrimenti</p>
+                <h2 class="contact-name">David Bowie</h2>
+                <p>Heroes</p>
+              </div>
+              <p>17.00</p>
+            </div>
+            <div class="contatto" data-id="4">
+              <img src="img/slipknot.jpg" alt="">
+              <div class="contenuto">
+                <h2 class="contact-name">Slipknot</h2>
+                <p>Before i Forget</p>
+              </div>
+              <p>17.00</p>
+            </div>
+            <div class="contatto" data-id="5">
+              <img src="img/radiohead.jpg" alt="">
+              <div class="contenuto">
+                <h2 class="contact-name">Radiohead</h2>
+                <p>Creep</p>
+              </div>
+              <p>17.00</p>
+            </div>
+            <div class="contatto" data-id="5">
+              <img src="img/gatto.jpg" alt="">
+              <div class="contenuto">
+                <h2 class="contact-name">stefania</h2>
+                <p>Creep</p>
+              </div>
+              <p>17.00</p>
+            </div>
+            <div class="contatto" data-id="5">
+              <img src="img/radiohead.jpg" alt="">
+              <div class="contenuto">
+                <h2 class="contact-name">Radiohead</h2>
+                <p>Creep</p>
               </div>
               <p>17.00</p>
             </div>
@@ -74,21 +106,21 @@
         </nav>
         <div class="home">
           <div class="home-contatto">
-            <img src="img/avatar3.png" alt="">
+            <img src="img/oasis.jpg" alt="">
             <h3>
-              <span>Michele</span>
+              <span>Oasis</span>
               <br>
               <p>ultimo accesso oggi alle 15.00</p>
             </h3>
             <div class="icone">
-              <i class="fas fa-circle-notch"></i>
-              <i class="fas fa-comment-alt"></i>
+              <i class="fas fa-search"></i>
+              <i class="fas fa-paperclip"></i>
               <i class="fas fa-ellipsis-v"></i>
             </div>
           </div>
           <div class="chat">
             <div class="messaggio-container">
-              <div id="messaggio-destra" class="messaggi-destra">
+              <div class="messaggi-destra" data-id="0">
                 <div class="messaggio ricevuto">
                   <span class="testo-messaggio">Ciao come stai?</span>
                   <span class="ora-messaggio">15.00</span>
@@ -106,7 +138,106 @@
                     <div class="messaggio-info">Info messaggio</div>
                     <div class="messaggio-destroy">cancella messaggio</div>
                   </div>
-
+                </div>
+              </div>
+              <div class="messaggi-destra active" data-id="1">
+                <div class="messaggio ricevuto">
+                  <span class="testo-messaggio">hei ciao che fai oggi?</span>
+                  <span class="ora-messaggio">15.00</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
+                </div>
+                <div class="messaggio spedito">
+                  <span class="testo-messaggio">Ciao, oggi mi metto a programmare!</span>
+                  <span class="ora-messaggio">15.10</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
+                </div>
+              </div>
+              <div class="messaggi-destra" data-id="2">
+                <div class="messaggio ricevuto">
+                  <span class="testo-messaggio">Ciao, stasera andiamo a cena fuori vieni?</span>
+                  <span class="ora-messaggio">15.00</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
+                </div>
+                <div class="messaggio spedito">
+                  <span class="testo-messaggio">Ciao, si certo verso che ore andiamo?</span>
+                  <span class="ora-messaggio">15.10</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
+                </div>
+              </div>
+              <div class="messaggi-destra" data-id="3">
+                <div class="messaggio ricevuto">
+                  <span class="testo-messaggio">Ciao usciamo oggi pomeriggio?</span>
+                  <span class="ora-messaggio">15.00</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
+                </div>
+                <div class="messaggio spedito">
+                  <span class="testo-messaggio">Ciao, oggi non posso devo studiare.....</span>
+                  <span class="ora-messaggio">15.10</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
+                </div>
+              </div>
+              <div class="messaggi-destra" data-id="4">
+                <div class="messaggio ricevuto">
+                  <span class="testo-messaggio">Questo js mi sta facendo impazzire....</span>
+                  <span class="ora-messaggio">15.00</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
+                </div>
+                <div class="messaggio spedito">
+                  <span class="testo-messaggio">A chi lo dici</span>
+                  <span class="ora-messaggio">15.10</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
+                </div>
+              </div>
+              <div class="messaggi-destra" data-id="5">
+                <div class="messaggio ricevuto">
+                  <span class="testo-messaggio">..........................</span>
+                  <span class="ora-messaggio">15.00</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
+                </div>
+                <div class="messaggio spedito">
+                  <span class="testo-messaggio">-.- -.- -.- -.- -.- -.-</span>
+                  <span class="ora-messaggio">15.10</span>
+                  <i class="fa fa-chevron-down f-right messagge-option"></i>
+                  <div class="messaggio-opzioni-pannello">
+                    <div class="messaggio-info">Info messaggio</div>
+                    <div class="messaggio-destroy">cancella messaggio</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -118,7 +249,6 @@
             </div>
             <i class="fas fa-microphone"></i>
           </div>
-
         </div>
       </main>
     </div>
